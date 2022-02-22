@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>HPB MainNet Faucet</title>
+    <link rel="stylesheet" href="assets/css/vendor.css" /> 
+    <link rel="stylesheet" href="assets/css/fancybox.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet"  href="assets/toastr/css/toastr.min.css"></script>
+
+  <script>
+    // window._CONFIG = {};
+    // window._CONFIG['domianURL'] = 'http://localhost:8085/json'; 
+  </script>
+  
+
+  </head>
+  <body >
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <!-- search popup start-->
+    <div class="body-overlay" id="body-overlay"></div>
+    <div class="td-search-popup" id="td-search-popup">
+        <div class="search-form" >
+
+            <div class="form-group" style="padding: 10px; border:1px solid #eee">
+               <h4 style="font-weight:normal">验证</h4>
+            </div>
+
+            <button type="button" class="login-btn"><i class="fa fa-close"></i></button>
+
+            <div style="margin-top: 30px;text-align:center">
+              <a href="https://github.com/login/oauth/authorize?client_id=ace56d9020f612e5879b">
+                <img  src="assets/img/icon/github.png"  width="64" height="64" alt="github">
+              </a>
+              <h4  style="font-weight:normal; margin-top:30px">点击图标，验证身份</h4>
+            </div>
+        
+        </div>
+    </div>
+
+    <div id="app">
+      
+    </div>
+    
+  </body>
+
+  <!-- all plugins here -->
+  <script src="assets/js/vendor.js"></script>
+  <script src="assets/toastr/js/toastr.min.js"></script>
+  <!-- main js  -->
+  <script src="assets/js/main.js"></script>
+</html>
