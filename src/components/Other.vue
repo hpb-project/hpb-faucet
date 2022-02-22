@@ -5,7 +5,7 @@
         <div class="col-10">
           <div class="section-title text-center">
             <p>
-              0.1HPB per request, 1 time/ every day, max 100 times per IP. Serving from account 0xaccf7aacd00bb765120f10685e58d916d3ec3057.
+             0.1HPB per github account, 1 time/ every day, max 100 times per account. <br />Serving from account 0xaccf7aacd00bb765120f10685e58d916d3ec3057.
             </p>
           </div>
         </div>

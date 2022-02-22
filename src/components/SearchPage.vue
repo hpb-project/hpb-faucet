@@ -16,6 +16,9 @@
                 <button type="button" class="btn" v-on:click="SendAddress">
                   <img src="assets/img/icon/submit.png" alt="img" />
                 </button>
+                <div style="margin-top:10px;font-weight:600;">
+                  Please identify your request with <a href="" @click.prevent="loginGithub" >GitHub</a> OAuth authorizing
+                </div>
               </form>
               <div>
                 <button
@@ -51,6 +54,10 @@ export default {
       this.toAddress = address
   },
   methods: {
+    loginGithub(){
+       $("#hiddenButton").trigger("click");
+       return false;
+    },
     async SendAddress() {
 
       if (this.toAddress == "") {
