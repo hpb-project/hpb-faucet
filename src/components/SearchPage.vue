@@ -27,7 +27,7 @@
                   class="search btn"
                   style="display: none"
                 >
-                  登录github
+                  Login Github
                 </button>
               </div>
             </div>
