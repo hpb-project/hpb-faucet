@@ -86,7 +86,7 @@ export default {
             //调用父组件的函数
             this.$emit("getLastAccounts");
         } else {
-          window.localStorage.setItem("github_token", "");
+          // window.localStorage.setItem("github_token", "");
           Util.toastMsgError( "Tip", resultJson.data,      "toast-top-center" );
         }
         this.toAddress = "";
