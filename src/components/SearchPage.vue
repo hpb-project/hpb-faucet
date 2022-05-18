@@ -81,7 +81,8 @@ export default {
         let parameter = { token: token, to: this.toAddress };
         let resultJson = await sendTransfer(parameter); 
         if (resultJson.error == "200") {
-            window.localStorage.setItem("account_address", "");
+            // window.localStorage.setItem("account_address", "");
+             this.toAddress = "";
             Util.toastMsgSuccess("Tip", "Receive Success", "toast-top-center");
             //调用父组件的函数
             this.$emit("getLastAccounts");
